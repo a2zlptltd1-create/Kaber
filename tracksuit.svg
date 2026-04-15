@@ -1,0 +1,41 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D0D0D0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8B8B8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pantGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0A0A0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="trackShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="#F5F5F5"/>
+  <!-- Jacket Left Sleeve -->
+  <path d="M50 60 L28 70 L24 100 L48 95 Z" fill="#D0D0D0" filter="url(#trackShadow)"/>
+  <!-- Jacket Right Sleeve -->
+  <path d="M150 60 L172 70 L176 100 L152 95 Z" fill="#D0D0D0" filter="url(#trackShadow)"/>
+  <!-- Jacket Body -->
+  <path d="M50 55 L150 55 L155 80 L165 95 L160 135 L40 135 L35 95 L45 80 Z" fill="url(#trackGrad)"/>
+  <!-- Jacket Zipper -->
+  <line x1="100" y1="57" x2="100" y2="110" stroke="#888888" stroke-width="1.5" opacity="0.7"/>
+  <!-- Stripe Left -->
+  <rect x="45" y="105" width="8" height="30" fill="#888888" opacity="0.4"/>
+  <!-- Stripe Right -->
+  <rect x="147" y="105" width="8" height="30" fill="#888888" opacity="0.4"/>
+  <!-- Left Pant Leg -->
+  <path d="M70 135 L65 185 L75 188 L80 135 Z" fill="url(#pantGray)"/>
+  <!-- Right Pant Leg -->
+  <path d="M120 135 L115 188 L125 185 L130 135 Z" fill="url(#pantGray)"/>
+  <!-- Pant Stripe Left -->
+  <line x1="68" y1="135" x2="65" y2="185" stroke="#888888" stroke-width="1" opacity="0.5"/>
+  <!-- Pant Stripe Right -->
+  <line x1="132" y1="135" x2="135" y2="185" stroke="#888888" stroke-width="1" opacity="0.5"/>
+  <!-- Highlight Jacket -->
+  <ellipse cx="70" cy="85" rx="12" ry="18" fill="#ffffff" opacity="0.15"/>
+  <!-- Highlight Pant -->
+  <ellipse cx="75" cy="150" rx="6" ry="20" fill="#ffffff" opacity="0.1"/>
+</svg>

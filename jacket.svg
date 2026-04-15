@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A84C4C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7A3A3A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="liningGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D4C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D8C4A8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="jacketShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="#F5F5F5"/>
+  <!-- Jacket Left Sleeve -->
+  <path d="M50 70 L25 82 L20 125 L48 112 Z" fill="url(#jacketGrad)" filter="url(#jacketShadow)"/>
+  <!-- Jacket Right Sleeve -->
+  <path d="M150 70 L175 82 L180 125 L152 112 Z" fill="url(#jacketGrad)" filter="url(#jacketShadow)"/>
+  <!-- Jacket Body/Outer -->
+  <path d="M50 65 L150 65 L156 88 L166 110 L162 160 L38 160 L34 110 L44 88 Z" fill="url(#jacketGrad)" filter="url(#jacketShadow)"/>
+  <!-- Jacket Lining Left (visible at collar) -->
+  <path d="M92 65 L78 78 L85 92 L98 85 Z" fill="url(#liningGrad)" opacity="0.8"/>
+  <!-- Jacket Lining Right (visible at collar) -->
+  <path d="M108 65 L122 78 L115 92 L102 85 Z" fill="url(#liningGrad)" opacity="0.8"/>
+  <!-- Collar Detail -->
+  <path d="M85 88 L100 98 L115 88" stroke="#333333" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <!-- Left Front Pocket -->
+  <rect x="58" y="110" width="16" height="24" rx="3" fill="none" stroke="#5A2A2A" stroke-width="0.8" opacity="0.6"/>
+  <!-- Right Front Pocket -->
+  <rect x="126" y="110" width="16" height="24" rx="3" fill="none" stroke="#5A2A2A" stroke-width="0.8" opacity="0.6"/>
+  <!-- Zipper -->
+  <line x1="100" y1="67" x2="100" y2="135" stroke="#C0A080" stroke-width="1.5" opacity="0.8"/>
+  <!-- Fabric Texture Highlight -->
+  <ellipse cx="75" cy="95" rx="14" ry="22" fill="#ffffff" opacity="0.12"/>
+  <!-- Sleeve Cuff (sherpa detail) -->
+  <ellipse cx="25" cy="120" rx="6" ry="8" fill="url(#liningGrad)" opacity="0.7"/>
+  <ellipse cx="175" cy="120" rx="6" ry="8" fill="url(#liningGrad)" opacity="0.7"/>
+</svg>

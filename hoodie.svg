@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A0A0A;stop-opacity:1" />
+    </linearGradient>
+    <filter id="hoodieShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="#F5F5F5"/>
+  <!-- Hood Lining (lighter) -->
+  <path d="M70 35 Q100 20 130 35 L135 60 Q100 75 65 60 Z" fill="#4A4A4A" filter="url(#hoodieShadow)"/>
+  <!-- Hood Outer (dark) -->
+  <path d="M68 38 Q100 25 132 38 L130 55 Q100 68 70 55 Z" fill="#1A1A1A"/>
+  <!-- Left Sleeve -->
+  <path d="M50 68 L25 78 L20 110 L48 100 Z" fill="#1A1A1A" filter="url(#hoodieShadow)"/>
+  <!-- Right Sleeve -->
+  <path d="M150 68 L175 78 L180 110 L152 100 Z" fill="#1A1A1A" filter="url(#hoodieShadow)"/>
+  <!-- Body/Torso -->
+  <path d="M50 68 L150 68 L155 90 L165 105 L160 165 L40 165 L35 105 L45 90 Z" fill="url(#hoodieGrad)"/>
+  <!-- Front Pocket Left -->
+  <ellipse cx="75" cy="125" rx="16" ry="20" fill="#0A0A0A"/>
+  <ellipse cx="75" cy="125" rx="14" ry="18" fill="#1A1A1A" stroke="#333333" stroke-width="0.5"/>
+  <!-- Front Pocket Right -->
+  <ellipse cx="125" cy="125" rx="16" ry="20" fill="#0A0A0A"/>
+  <ellipse cx="125" cy="125" rx="14" ry="18" fill="#1A1A1A" stroke="#333333" stroke-width="0.5"/>
+  <!-- Drawstring -->
+  <path d="M95 65 Q100 70 105 65" stroke="#333333" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Highlight -->
+  <ellipse cx="70" cy="90" rx="12" ry="20" fill="#ffffff" opacity="0.08"/>
+</svg>
